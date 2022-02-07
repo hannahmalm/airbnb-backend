@@ -8,6 +8,7 @@ class CreateListings < ActiveRecord::Migration[6.1]
       t.string :image_url
       t.decimal :base_price
       t.string :amenity_description
+      t.integer :location_id
 
       t.timestamps
     end
