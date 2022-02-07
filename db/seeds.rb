@@ -21,11 +21,9 @@ Location.create(city: "Pheonix", state: "Arizona", city_image: "https://www.goog
 
 
 # #---RESERVATIONS---------------------------------------------------
-# t.date "start_date"
-# t.date "end_date"
-# t.integer "listing_id"
-# t.integer "user_id"
-
+Reservation.create(start_date: "09/30/2021" , end_date: "10/03/2021",listing_id: 1, user_id: 2)
+Reservation.create(start_date: "06/16/2022", end_date: "06/20/2022",listing_id: 3, user_id: 1)
+Reservation.create(start_date: "07/17/2021", end_date: "07/19/2021" ,listing_id: 2, user_id: 1)
 
 # #---REVIEWS------------------------------------------------------
 Review.create(description: "Horrible View", user_id: 1, listing_id: 1)
