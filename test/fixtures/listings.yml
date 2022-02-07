@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  host_name: MyString
+  beds: MyString
+  baths: MyString
+  image_url: MyString
+  base_price: MyString
+  amenity_description: MyString
+
+two:
+  title: MyString
+  host_name: MyString
+  beds: MyString
+  baths: MyString
+  image_url: MyString
+  base_price: MyString
+  amenity_description: MyString
