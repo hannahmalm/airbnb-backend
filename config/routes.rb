@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   #UPDATE THESE TO ONLY ALLOW SPECIFIC ROUTES
   namespace :api do 
     namespace :v1 do 
+      resources :auths 
       resources :users
       resources :listings
       resources :locations
