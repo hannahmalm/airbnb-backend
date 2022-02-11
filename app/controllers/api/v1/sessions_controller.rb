@@ -1,11 +1,9 @@
 class Api::V1::SessionsController < ApplicationController
-    #This is where Authorization and Sessions Occur
-
     def create
         @user = User.find_by(username: params[:session][:username])
 
         if @user && @user.authenticate(params[:session][:password])
-            session[:user_id] = @user.id
+            session[:user_id] = @user.id #set the current user
             render json: @user
         else 
             render json: {
