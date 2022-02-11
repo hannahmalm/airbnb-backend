@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
 
   #login
-    get "/api/v1/login", to "auths#create"
+  get "/api/v1/login" to "api/v1/sessions#create"
 
   #logout
-  get "/api/v1/logout", to "auths#destroy"
+  get "/api/v1/logout" to "api/v1/sessions#destroy"
 
   #UPDATE THESE TO ONLY ALLOW SPECIFIC ROUTES
   namespace :api do 
