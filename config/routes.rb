@@ -14,7 +14,10 @@ Rails.application.routes.draw do
   #UPDATE THESE TO ONLY ALLOW SPECIFIC ROUTES
   namespace :api do 
     namespace :v1 do 
-      resources :users
+      resources :users do
+        resources :reservations, only[:index]
+      end
+
       resources :listings
       resources :locations
       resources :reservations
