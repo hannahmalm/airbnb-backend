@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   #login
   post "/api/v1/login", to: "api/v1/sessions#create"
-  post "/api/v1/logout", to: "api/v1/sessions#destroy"
+  delete "/api/v1/logout", to: "api/v1/sessions#destroy"
 
   #current user
   get "/api/v1/current_user", to: "api/v1/sessions#current_user"
