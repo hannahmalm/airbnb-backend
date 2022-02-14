@@ -38,7 +38,9 @@ module AirbnbBackend
     #tell RAILS to send cookies and sessions
     #grab cookies and sessions --> Add into cors the key/value pair
     config.api_only = true
-    config.middleware.use ActionDispatch::Cookies 
-    config.middleware.use ActionDispatch::Session::CookieStore, key: "_cookie_name"
+    # config.middleware.use ActionDispatch::Cookies 
+    # config.middleware.use ActionDispatch::Session::CookieStore, key: "_cookie_name"
+    config.middleware.use ActionDispatch::Cookies
+    config.middleware.use ActionDispatch::Session::CookieStore, key: '_namespace_key'
   end
 end
